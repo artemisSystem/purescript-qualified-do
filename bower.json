@@ -1,0 +1,21 @@
+{
+    "name": "purescript-qualified-do",
+    "license": [
+        "MIT"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/artemisSystem/purescript-qualified-do.git"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
+    ],
+    "dependencies": {
+        "purescript-control": "^v6.0.0",
+        "purescript-parallel": "^v6.0.0",
+        "purescript-prelude": "^v6.0.0"
+    }
+}
