@@ -2,6 +2,7 @@ import Prelude
 
 import QualifiedDo.Alt as Alt
 import QualifiedDo.FoldMap as F
+import QualifiedDo.Kleisli as ComposeK
 import QualifiedDo.OneOfMap as O
 import QualifiedDo.ParAlt as ParAlt
 import QualifiedDo.ParApply as Par

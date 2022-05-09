@@ -1,4 +1,4 @@
--- | Accumulate `do` block entries in a `Semigroupoid`. Example:
+-- | Compose `do` block entries in a `Semigroupoid`. Example:
 -- |
 -- | ```purescript
 -- | import QualifiedDo.Semigroupoid as Compose
