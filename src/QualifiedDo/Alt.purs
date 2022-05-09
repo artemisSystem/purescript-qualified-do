@@ -15,8 +15,8 @@ import Prelude
 
 import Control.Alt (class Alt, (<|>))
 
-bind ∷ ∀ f a. Alt f ⇒ f a → (Unit → f a) → f a
-bind a b = a <|> b unit
+bind ∷ ∀ f a. Alt f ⇒ f a → (f a → f a) → f a
+bind a b = a <|> b a
 
 discard ∷ ∀ f a. Alt f ⇒ f a → (Unit → f a) → f a
 discard a b = a <|> b unit

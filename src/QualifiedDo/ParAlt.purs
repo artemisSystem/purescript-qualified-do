@@ -1,4 +1,5 @@
--- | Accumulate `do` block entries in an `Alt`. Example:
+-- | Accumulate `do` block entries in an `Alt` using its `Parallel` instance.
+-- | Example:
 -- |
 -- | ```purescript
 -- | import QualifiedDo.ParAlt as ParAlt
@@ -19,8 +20,8 @@ import Control.Parallel (class Parallel, parallel, sequential)
 parAlt ∷ ∀ f m a. Parallel f m ⇒ Alt f ⇒ m a → m a → m a
 parAlt a b = sequential $ parallel a <|> parallel b
 
-bind ∷ ∀ f m a. Parallel f m ⇒ Alt f ⇒ m a → (Unit → m a) → m a
-bind a b = a `parAlt` b unit
+bind ∷ ∀ f m a. Parallel f m ⇒ Alt f ⇒ m a → (m a → m a) → m a
+bind a b = a `parAlt` b a
 
 discard ∷ ∀ f m a. Parallel f m ⇒ Alt f ⇒ m a → (Unit → m a) → m a
 discard a b = a `parAlt` b unit

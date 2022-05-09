@@ -13,8 +13,8 @@ module QualifiedDo.Semigroup where
 
 import Prelude
 
-bind ∷ ∀ a. Semigroup a ⇒ a → (Unit → a) → a
-bind a b = a <> b unit
+bind ∷ ∀ a. Semigroup a ⇒ a → (a → a) → a
+bind a b = a <> b a
 
 discard ∷ ∀ a. Semigroup a ⇒ a → (Unit → a) → a
 discard a b = a <> b unit
