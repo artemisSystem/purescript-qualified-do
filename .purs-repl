@@ -5,6 +5,7 @@ import QualifiedDo.FoldMap as F
 import QualifiedDo.OneOfMap as O
 import QualifiedDo.ParAlt as ParAlt
 import QualifiedDo.ParApply as Par
+import QualifiedDo.ParOneOfMap as PO
 import QualifiedDo.Semigroup as S
 import QualifiedDo.Semigroupoid as Compose
 import QualifiedDo.Unfoldable as U
