@@ -14,8 +14,11 @@
         "output"
     ],
     "dependencies": {
+        "purescript-arrays": "^v7.0.0",
         "purescript-control": "^v6.0.0",
+        "purescript-foldable-traversable": "^v6.0.0",
         "purescript-parallel": "^v6.0.0",
-        "purescript-prelude": "^v6.0.0"
+        "purescript-prelude": "^v6.0.0",
+        "purescript-unfoldable": "^v6.0.0"
     }
 }
